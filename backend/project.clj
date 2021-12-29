@@ -3,5 +3,6 @@
   :url "https://github.com/meandor/oy"
   :license {:name "MIT"
             :url "https://github.com/meandor/oy/blob/main/LICENSE"}
-  :dependencies [[org.clojure/clojure "1.10.1"]]
+  :dependencies [[org.clojure/clojure "1.10.3"]]
+  :plugins [[lein-ancient "1.0.0-RC3"]]
   :repl-options {:init-ns app.core})

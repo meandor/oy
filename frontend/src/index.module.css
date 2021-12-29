@@ -1,0 +1,92 @@
+@value colors: "./colors.css";
+@value primary, primary-light, primary-dark, custom-black, secondary, secondary-light, custom-gray, custom-background from colors;
+@value sizes: "./sizes.css";
+@value font-size-normal, font-size-small, normal-space, extra-space, max-screen-width from sizes;
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-size: font-size-normal;
+  line-height: 2rem;
+  color: custom-black;
+  background-color: custom-background;
+}
+
+main {
+  padding: normal-space;
+  margin: auto;
+  width: max-screen-width;
+  max-width: max-screen-width;
+}
+
+a {
+  text-decoration: none;
+  color: secondary;
+}
+
+a:hover {
+  color: secondary-light;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: normal-space;
+  margin-top: normal-space;
+  font-weight: 500;
+  line-height: 1.9rem;
+}
+
+form {
+  margin-top: normal-space;
+}
+
+label {
+  width: 100%;
+  display: block;
+  color: primary;
+  font-size: font-size-small;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  font-size: font-size-normal;
+  padding: 0.8rem;
+  border: 1px solid custom-gray;
+  border-radius: 0.25rem;
+}
+
+select {
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: font-size-normal;
+  padding: 0.8rem;
+  border: 1px solid primary;
+  border-radius: 0.25rem;
+}
+
+select::-ms-expand {
+  display: none;
+}

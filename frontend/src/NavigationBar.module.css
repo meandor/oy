@@ -1,0 +1,30 @@
+@value colors: "./colors.css";
+@value primary-dark, custom-white from colors;
+@value sizes: "./sizes.css";
+@value extra-space, normal-space, font-size-bigger, max-screen-width from sizes;
+
+.topBar {
+  height: 7rem;
+  background-color: primary-dark;
+  color: custom-white;
+}
+
+.logo {
+  font-size: font-size-bigger;
+  font-weight: bold;
+  margin: 0 extra-space 0 normal-space;
+}
+
+.navigationItem {
+  color: custom-white;
+  margin-right: normal-space;
+}
+
+.maxWidth {
+  width: max-screen-width;
+  max-width: max-screen-width;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  height: 100%;
+}
